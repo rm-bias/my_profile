@@ -1,11 +1,22 @@
-*{
-    margin: 0px;
-    padding:0px;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
+
+
 
 body{
   background-color: whitesmoke;
+  
+}
+
+.navbar{
+  position: sticky;
 }
 
 .navbar li{
@@ -23,6 +34,11 @@ body{
     justify-content: right;
 }
 
+ a{
+  color: white;
+  text-decoration: none;
+}
+
 .basecard{
   padding: 2%;
   margin: 2%;
@@ -31,7 +47,7 @@ body{
 }
 
 .basecard img{
-  border-radius: 50%;
+  /* border-radius: 50%; */
   width: 100%;
   height: auto;
 }
@@ -44,20 +60,24 @@ body{
 }
 
 .info{
-  padding-top: 4%;
-  margin-top: 1.5%;
+  width: 67%;
+  /* padding-top: 4%; */
+  margin-top: 6%;
   margin-left: 5%;
   text-align: center;
+  text-align: left;
+  /* font-family: myFirstFont; */
   /* border: 1px solid; */
 }
 
 .info h1{
-  font-size: 9vw;
+  font-size: 7vw;
 }
 
 .info p{
   margin-top: 2%;
-  font-size: 3vw;
+  padding-bottom: 20%;
+  font-size: 2vw;
 }
 
 .education{
@@ -65,7 +85,7 @@ body{
 }
 .subcard{
   width: 50%;
-  border: 1px solid;
+  /* border: 1px solid; */
   margin: 1%;
   padding: 1%;
 }
@@ -83,6 +103,11 @@ body{
 }
 
 
+.skills{
+  display: block;
+}
+
+
 .skillcontainer{
   flex-basis:0;
   padding: 1%;
@@ -93,7 +118,177 @@ body{
 }
 
 .skill{
-  height: 5px;
+  height: 20px;
   border-radius: 20px;
   background-color: grey;
+  overflow: hidden;
+}
+
+
+.skilllevel1{
+  background-color:rgb(0, 71, 171);
+  height: 100%;
+  width: 60%;
+
+}
+
+.skilllevel2{
+  background-color: rgb(0, 71, 171);
+  height: 100%;
+  width: 40%;
+
+}
+
+.skilllevel3{
+  background-color:rgb(0, 71, 171);
+  height: 100%;
+  width: 60%;
+
+}
+
+.skilllevel4{
+  background-color:rgb(0, 71, 171);
+  height: 100%;
+  width: 60%;
+
+}
+
+.skilllevel5{
+  background-color:rgb(0, 71, 171);
+  height: 100%;
+  width: 70%;
+
+}
+
+.skilllevel6{
+  background-color: rgb(0, 71, 171);
+  height: 100%;
+  width: 60%;
+
+}
+
+.skilllevel7{
+  background-color: rgb(0, 71, 171);
+  height: 100%;
+  width: 40%;
+
+}
+
+.skilllevel8{
+  background-color: rgb(0, 71, 171);
+  height: 100%;
+  width: 65%;
+
+}
+
+
+
+.contact{
+  padding:1%;
+  margin: 0;
+  height: 15vh;
+  background-color: white;
+
+}
+
+.follow{
+  right: 0;
+}
+
+
+
+
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.contact {
+  padding: 49px;
+}
+
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: rgb(0, 71, 171);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: rgb(1, 37, 87);
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.Social {
+  padding-top: 10px;
+  margin-left: 30px;
+
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+.Social:hover {
+  transform: translateY(-5px);
+}
+
+.btn-top {
+  font-size: 40px;
+  margin-left: 120%;
+  opacity: 50%;
+}
+.btn-top:hover {
+  opacity: 100%;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+
+}
+
+.btn-last {
+  font-size: 40px;
+  right: 2%;
+  position: absolute;
+  opacity: 50%;
+}
+.btn-last:hover {
+  opacity: 100%;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+
 }
